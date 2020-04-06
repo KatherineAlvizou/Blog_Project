@@ -12,7 +12,7 @@ The purpose is to build out a blog website, including custom images, layout, and
 
  **Code Quality**
 
-The code must follow Udacity's Frontend Nanodegree style guide concerning HTML,CSS and JAVASCRIPT Formatting and style rules as well as General meta rules and General Formatting rules.
+The code must follow Udacity's Frontend Nanodegree style guide concerning HTML,CSS Formatting and style rules as well as General meta rules and General Formatting rules.
 
  
    
