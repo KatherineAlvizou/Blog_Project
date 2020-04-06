@@ -1,0 +1,357 @@
+html{
+background: url("images-index/annie-spratt-unsplash.jpg") no-repeat center center fixed;  /* Photo by Annie Spratt on Unsplash */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;    
+}
+
+body{
+color: rgb(46, 48, 47);    
+}
+.container{
+margin: auto; 
+display: grid;
+width: 85%;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+grid-template-areas: 
+"hd hd hd"
+"main main main"
+"ft ft ft";
+align-items: center;
+gap: 5px;
+font-family: 'Roboto', sans-serif;   
+}
+.grid-item{
+background-color: rgb(244, 248, 250); 
+}
+#header-container{
+grid-area: hd;        
+}
+#main-container{
+grid-area: main;
+padding: 0.5em;
+}
+#footer-container{
+grid-area: ft;    
+}
+
+/* header & navbar  */
+.menu h1,
+.menu .logo{
+vertical-align: middle;
+display: inline-block;   
+}
+.menu{
+text-align: center;
+}
+.logo{    
+ width: 1em;
+}
+h1{
+font-size: 1.1em; 
+font-family: 'Sen', sans-serif;  
+}
+.nav-bar{
+text-align:center;
+padding-bottom: 0.6em;
+}
+.nav-link{
+text-transform: uppercase;
+text-decoration: none;
+color: rgb(46, 48, 47);
+font-size: 12px;
+padding: 0  1em;   
+}
+p{
+text-align: justify;
+font-size: 13px;   
+}
+a:hover{
+color:  rgb(8, 151, 115);
+} 
+
+/* main content- first & second articles  */
+#main-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: "article-one article-one article-one "
+"article-two article-two article-two"
+"aside aside aside";    
+}
+.first-article{
+grid-area: article-one;
+place-self: stretch;
+}
+.second-article{
+grid-area: article-two;
+place-self: stretch;
+}
+.aside-container{
+grid-area: aside;
+place-self: stretch;
+}
+.first-article h2{
+border: 3px inset rgb(52, 85, 68);
+}
+h2{
+font-size: 1em;
+text-align: center;
+padding: 0.3em;
+}
+h2 span{
+font-size:0.8em;
+font-style: italic;
+text-align: center;
+}
+h3{
+font-size: 0.9em;
+}
+#main-container .first-article,
+#main-container .second-article{
+width: 90%;
+margin: 0 auto;
+}
+.first-article img{
+width: 100%;
+height: auto;
+}
+.article1-images{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "img2 img1"
+    "img2 img3";
+}
+.article1-img2{
+grid-area: img1;
+}
+.article1-img3{
+grid-area: img2;
+}
+.article1-img4{
+grid-area: img3;
+}
+.article1-images img{
+place-self: stretch;
+}
+.article2-images img {
+width: 100%;
+height: auto;
+place-self: stretch;
+}
+.article2-images{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: "img-1 img-2 img-3";
+}
+.article2-img1{
+grid-area: img-1;
+}
+.article2-img2{
+grid-area: img-2;
+}
+.article2-img3{
+grid-area: img-3;
+}
+.plant-care li,
+.dividing-iris li{
+font-size: 13px;
+list-style-type: square;
+}
+.second-article h2,
+.aside-container h2{
+padding: 0.5em;
+}
+/* aside content */
+#main-container .aside-container{
+width: 90%;
+margin: 0 auto;    
+}
+.gallery img{
+width:100%;
+height: auto;
+place-self: stretch;
+}
+.gallery{
+padding-bottom: 0.5em;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(5, auto);
+grid-template-areas: "img1 img2 img2"
+    "img3 img4 img5"
+    "img6 img6 img7"
+    "img8 img9 img10"
+    "img11 img12 img12" 
+    "img13 img13 img14"
+    "img15 img16 img16"
+    "img17 img17 img18";    
+}
+
+.img1{
+grid-area: img1;
+}
+.img2{
+grid-area: img2;
+}
+.img3{
+grid-area: img3;
+}
+.img4{
+grid-area: img4;
+}
+.img5{
+grid-area: img5;
+}
+.img6{
+grid-area: img6;
+}
+.img7{
+grid-area: img7;
+}
+.img8{
+grid-area: img8;
+}
+.img9{
+grid-area: img9;
+}
+.img10{
+grid-area: img10;
+}
+.img11{
+grid-area: img11;
+}
+.img12{
+grid-area: img12;
+}
+.img13{
+grid-area: img13;
+}
+.img14{
+grid-area: img14;
+}
+.img15{
+grid-area: img15;
+}
+.img16{
+grid-area: img16;
+}
+.img17{
+grid-area: img17;
+}
+.img18{
+grid-area: img18;
+}
+
+/* the footer */
+.footer-icons{
+text-align: center;
+padding: 0.4em 0;    
+ }   
+.footer-icons a{
+padding: 0 0.2em;
+width: 1em;  
+  } 
+
+        /*MEDIA QUERIES*/
+
+  @media screen and (min-width: 500px){
+    h1 {
+    font-size: 1.3em;
+    } 
+    .logo{
+    width: 1.3em;
+    }
+    .nav-link{
+    font-size: 14px;    
+    }
+    .nav-bar {
+    padding-bottom: 0.7em;
+    }
+    p{
+    font-size: 14px; 
+    line-height: 1.3;  
+    }
+    h2{
+    font-size: 1.1em;
+    }
+    h2 span{
+    font-size: 0.9em;
+    }
+    h3{
+    font-size: 1em;
+    }
+    .footer-icons{
+    padding: 0.5em 0; 
+    }
+  }
+  
+
+    @media screen and (min-width: 780px){
+    #header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    }
+    .nav-bar{
+    padding-top:0.5em;
+    }
+   .footer-icons{
+    padding: 1em;
+    }
+    .footer-link{
+   padding: 0  0.7em;
+    }
+    h2{
+    padding: 1.2em 0;
+    }
+    .plant-care li,
+    .dividing-iris li {
+    font-size: 13px;
+    }
+    .article1-images{
+    gap: 5px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+.container{
+gap: 10px;
+}
+#main-container{
+grid-template-columns: auto;
+grid-template-rows: auto;
+grid-template-areas: "article-one article-one article-two article-two aside";
+gap: 5px;
+}
+.article1-images{
+grid-template-columns: repeat(3, auto);
+grid-template-rows: auto;
+grid-template-areas: "img2 img1 img3";  
+}
+.article1-images img{
+width:100%;
+height: 120px;
+}
+.gallery{
+gap: 5px;
+}
+.logo{
+width:1.7em;
+}
+h1{
+font-size: 1.5em;
+}
+.nav-link{
+font-size: 16px;
+padding: 0 1.5em;
+}
+.footer-icons a{
+padding: 0.5em 1em;
+}
+}
