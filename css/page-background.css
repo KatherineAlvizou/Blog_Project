@@ -1,0 +1,11 @@
+html{
+    background: url("/assets/images-index/annie-spratt-unsplash.jpg") no-repeat center center fixed;  /* Photo by Annie Spratt on Unsplash */
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover; 
+   }
+
+   body{
+    color: rgb(46, 48, 47);    
+      }

@@ -1,0 +1,31 @@
+/* Header styling */
+#header-container{
+    grid-area: hd;       
+    }
+    .menu h1,
+    .menu .logo{
+    vertical-align: middle;
+    display: inline-block;   
+    }
+    .nav-bar{
+    text-align:center;
+    padding-bottom: 0.6em;
+    
+    }
+    .nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(46, 48, 47);
+    font-size: 12px;
+    padding: 0 1em;    
+    }
+    .menu{
+    text-align: center;
+    }
+    .logo{    
+     width: 1em;
+    }
+    h1{
+    font-size: 1.1em; 
+    font-family: 'Sen', sans-serif;  
+    }

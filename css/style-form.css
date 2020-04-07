@@ -1,10 +1,4 @@
-html{
-    background: url("images-index/annie-spratt-unsplash.jpg") no-repeat center center fixed;  /* Photo by Annie Spratt on Unsplash */
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover; 
-   }
+@import "page-background.css";
    body,
    html{
     height: 100%;
@@ -41,7 +35,6 @@ html{
   line-height: 1.2em; 
   box-shadow: 0.2em 0.2em 0.2em rgb(227, 231, 233);
   width: 40%;
-  font-weight: bold;
    }
    input{
        width: 70%;

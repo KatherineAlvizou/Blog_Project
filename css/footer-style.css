@@ -1,0 +1,15 @@
+/* the Footer */
+#footer-container{
+    grid-area: ft;     
+   }
+    .footer-icons{
+   text-align: center;
+   padding: 0.4em 0;  
+    }   
+   .footer-icons a{
+   padding: 0 0.2em;
+   width: 1em;
+   } 
+   a:hover{
+   color:  rgb(8, 151, 115);
+   }  

@@ -1,14 +1,6 @@
-html{
-background: url("images-index/annie-spratt-unsplash.jpg") no-repeat center center fixed;  /* Photo by Annie Spratt on Unsplash */
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;    
-}
-
-body{
-color: rgb(46, 48, 47);    
-}
+@import "page-background.css";
+@import "header-style.css";
+@import "footer-style.css";
 .container{
 margin: auto; 
 display: grid;
@@ -26,51 +18,12 @@ font-family: 'Roboto', sans-serif;
 .grid-item{
 background-color: rgb(244, 248, 250); 
 }
-#header-container{
-grid-area: hd;        
-}
+
 #main-container{
 grid-area: main;
 padding: 0.5em;
 }
-#footer-container{
-grid-area: ft;    
-}
 
-/* header & navbar  */
-.menu h1,
-.menu .logo{
-vertical-align: middle;
-display: inline-block;   
-}
-.menu{
-text-align: center;
-}
-.logo{    
- width: 1em;
-}
-h1{
-font-size: 1.1em; 
-font-family: 'Sen', sans-serif;  
-}
-.nav-bar{
-text-align:center;
-padding-bottom: 0.6em;
-}
-.nav-link{
-text-transform: uppercase;
-text-decoration: none;
-color: rgb(46, 48, 47);
-font-size: 12px;
-padding: 0  1em;   
-}
-p{
-text-align: justify;
-font-size: 13px;   
-}
-a:hover{
-color:  rgb(8, 151, 115);
-} 
 
 /* main content- first & second articles  */
 #main-container{
@@ -103,7 +56,6 @@ padding: 0.3em;
 }
 h2 span{
 font-size:0.8em;
-font-style: italic;
 text-align: center;
 }
 h3{
@@ -166,6 +118,11 @@ list-style-type: square;
 .aside-container h2{
 padding: 0.5em;
 }
+p{
+  text-align: justify;
+  font-size: 13px;   
+  }
+
 /* aside content */
 #main-container .aside-container{
 width: 90%;
@@ -246,15 +203,7 @@ grid-area: img17;
 grid-area: img18;
 }
 
-/* the footer */
-.footer-icons{
-text-align: center;
-padding: 0.4em 0;    
- }   
-.footer-icons a{
-padding: 0 0.2em;
-width: 1em;  
-  } 
+
 
         /*MEDIA QUERIES*/
 

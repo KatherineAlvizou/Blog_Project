@@ -1,13 +1,7 @@
-html{
- background: url("images-index/annie-spratt-unsplash.jpg") no-repeat center center fixed;  /* Photo by Annie Spratt on Unsplash */
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover; 
-}
-body{
-color: rgb(46, 48, 47);    
-  }
+@import "page-background.css";
+@import "header-style.css";
+@import "footer-style.css";
+
 .container{
 font-family: 'Roboto', sans-serif;
 margin: auto; 
@@ -28,37 +22,7 @@ gap: 5px;
 .grid-item{
 background-color: rgb(244, 248, 250);
 }
-/* Header styling */
-#header-container{
-grid-area: hd;       
-}
-.menu h1,
-.menu .logo{
-vertical-align: middle;
-display: inline-block;   
-}
-.nav-bar{
-text-align:center;
-padding-bottom: 0.6em;
 
-}
-.nav-link{
-text-transform: uppercase;
-text-decoration: none;
-color: rgb(46, 48, 47);
-font-size: 12px;
-padding: 0 1em;    
-}
-.menu{
-text-align: center;
-}
-.logo{    
- width: 1em;
-}
-h1{
-font-size: 1.1em; 
-font-family: 'Sen', sans-serif;  
-}
 
 /* the Author card */
 #card-container {
@@ -80,7 +44,6 @@ font-size: 13px;
 line-height: 1.3;   
 }
 .author-bio span{
-font-style: italic;
 text-align: center;
 padding: 0.3em;
 }
@@ -90,6 +53,9 @@ grid-area: main;
 }
 #main-container h2{
 text-align: center;      
+}
+figcaption{
+  font-size: 10px;
 }
 /* a sub-grid for my main content images*/
 .article-images{
@@ -113,7 +79,6 @@ font-size: 1em;
 padding: 0.5em;
 }
 h2 span{
-font-style: italic;
 font-size: 0.8em;   
 }
 #main-container p{
@@ -163,21 +128,21 @@ justify-content: center;
 align-items: center;
 }
 .first-archive{
- background: url(images-index/eco-warrior-princess-TsOeGUwWzWo-unsplash.jpg) no-repeat center center; /* Photo by Eco Warrior princess on Unsplash*/
+ background: url('/assets/images-index/eco-warrior-princess-TsOeGUwWzWo-unsplash.jpg') no-repeat center center; /* Photo by Eco Warrior princess on Unsplash*/
  -webkit-background-size: cover;
  -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;   
 }
 .second-archive{
-background: url(images-index/zane-lee-BbXYnYigR0U-unsplash.jpg) no-repeat center center;/* Photo by Zane Lee on Unsplash*/
+background: url('/assets/images-index/zane-lee-BbXYnYigR0U-unsplash.jpg') no-repeat center center;/* Photo by Zane Lee on Unsplash*/
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;  
 }
 .third-archive{ 
-background: url(images-index/markus-spiske-4PG6wLlVag4-unsplash.jpg) no-repeat center center; /* Photo by Markus Spiske on Unsplash*/
+background: url('/assets/images-index/markus-spiske-4PG6wLlVag4-unsplash.jpg') no-repeat center center; /* Photo by Markus Spiske on Unsplash*/
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -189,28 +154,13 @@ background-size: cover;
 text-decoration: none;
 background-color: rgba(244,248,250, 0.8);
 color: rgb(46, 48, 47);
-font-weight: bold;
 padding: 0.5em;
 font-size: 14px;
 }
 .archive-articles{
 padding-bottom: 1em;
 }
-/* the Footer */
-#footer-container{
- grid-area: ft;     
-}
- .footer-icons{
-text-align: center;
-padding: 0.4em 0;  
- }   
-.footer-icons a{
-padding: 0 0.2em;
-width: 1em;
-} 
-a:hover{
-color:  rgb(8, 151, 115);
-}  
+
        /* MEDIA QUERIES */
 
 @media screen and (min-width: 500px){
